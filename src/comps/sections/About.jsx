@@ -1,4 +1,5 @@
 import { TextScroll } from "../TextScroll"
+import aboutImg from '/src/assets/about.png';
 export const About = () => {
 
         const fullStackItems = ["React", "TailwindCSS", "SQL", "HTML & CSS", "Figma", "Python", "Node.js", "JavaScript", "Java"]
@@ -14,7 +15,7 @@ export const About = () => {
                 <div className="flex flex-col md:flex-row items-center gap-8 p-6">
                     <div className="w-full md:w-1/2 relative flex justify-center">
                         <img
-                        src="src/assets/about.png"
+                        src={aboutImg}
                         alt="Picture of Tanya"
                         className="w-40 md:w-3/4 max-w-xs border-4 border-[#F96074] shadow-[6px_6px_0_#766DA7]"
                         />
