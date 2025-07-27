@@ -2,45 +2,44 @@ import { TextScroll } from "../TextScroll"
 import aboutImg from '/src/assets/about.png';
 export const About = () => {
 
-        const fullStackItems = ["React", "TailwindCSS", "SQL", "HTML & CSS", "Figma", "Python", "Node.js", "JavaScript", "Java"]
-        const MLItems = ["TensorFlow", "Sckit Learn", "PyTorch", "OpenCV", "NLTK"]
+        const fullStackItems = ["React", "TailwindCSS", "SQL", "HTML & CSS", "Figma", "Python", "JavaScript", "Java", "Swift"]
+        const MLItems = ["TensorFlow", "Sckit Learn", "PyTorch", "OpenCV", "Keras", "NLTK"]
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-30">
             <TextScroll>
                 <div className="max-w-5xl mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#F96074] to-[#766DA7] bg-clip-text text-transparent">
-                    ⋆˚𖥔 ݁ About Me 💬 ˖.☘︎ ݁˖
+                    ⋆˚𖥔 about me 💬 ˖.☘︎
                 </h2>
 
-                <div className="flex flex-col md:flex-row items-center gap-8 p-6">
-                    <div className="w-full md:w-1/2 relative flex justify-center">
-                        <img
-                        src={aboutImg}
-                        alt="Picture of Tanya"
-                        className="w-40 md:w-3/4 max-w-xs border-4 border-[#F96074] shadow-[6px_6px_0_#766DA7]"
-                        />
-                    </div>
-
-                    <div className="w-full md:w-1/2 md:pl-6 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0">
-                        <p className="text-white text-lg text-center md:text-left">
-                        I’m an aspiring computational linguist passionate about exploring how machine learning can address social and digital challenges.
-                        I’m especially drawn to the ways humanities-driven fields and technology intersect to expand our understanding of the world.
-                        In my spare time, I love building web applications and experimenting with creative solutions.
-                        Beyond tech, I’m a digital artist, amateur entomologist, internet archaeologist, and cinephile.
-                        </p>
-                    </div>
+                <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+ 
+                <div className="w-full md:w-1/3 flex justify-center md:justify-center items-center">
+                    <img
+                    src={aboutImg}
+                    alt="Picture of Tanya"
+                    className="w-48 sm:w-54 md:w-68 lg:w-76 border-4 border-[#F96074] shadow-[6px_6px_0_#766DA7] transition-all duration-300"
+                    />
                 </div>
 
-                <div className="mt-8 text-center">
-                    <p className="text-md text-gray-400 italic">
-                        p.s. i also have a small art portfolio on wordpress! check out 
-                        <a 
+                <div className="flex-1 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6 space-y-12">
+                    <p className="text-white text-lg text-center md:text-left leading-relaxed">
+                    I’m an <span className="text-[#FF9FAB]">aspiring computational linguist</span> passionate about exploring how machine learning can address social and digital challenges.
+                    I’m especially drawn to the ways humanities-driven fields and technology intersect to expand our understanding of the world. 
+                    In my spare time, I love building web applications and experimenting with creative solutions.
+                    Beyond tech, I’m a digital artist, amateur entomologist, internet archaeologist, and cinephile.
+                    </p>
+
+                    <p className="text-md text-gray-400 italic text-center md:text-left">
+                    p.s. i also have a small art portfolio on wordpress! check out 
+                    <a 
                         href="https://toonyadraw.wordpress.com/" 
                         className="ml-1 text-[#FF9FAB] underline hover:text-[#F96074] transition"
-                        >
+                    >
                         my work here! 🎨
-                        </a>
+                    </a>
                     </p>
+                </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 pt-12">
@@ -107,6 +106,14 @@ export const About = () => {
                         <strong className="text-[#FF9FAB]">Cornell Comp Ling Lab</strong>: Research Assistant (2025–Present)
                         </p>
                     </div>
+
+                    <div className="relative">
+                        <p className="text-gray-300 text-md">
+                        <span className="mr-2">💡</span>
+                        <strong className="text-[#FF9FAB]">TechSur Solutions</strong>: SWE Intern (2025–Present)
+                        </p>
+                    </div>
+
                     </div>
                 </div>
 

@@ -4,17 +4,17 @@ This is my personal developer portfolio site, showcasing my work, skills, and in
 
 🌐 **Live Site:** [View Portfolio](https://tanya-pa.github.io/tanya-portfolio/)
 
-## 🚀 Tech Stack
+## Tech Stack
 - **React**
 - **Vite**
 - **Tailwind CSS**
 - **EmailJS** (for contact form handling)
 - Deployed via **GitHub Pages**
 
-## 📬 Contact
+## Contact
 Email: tanya26.paul@gmail.com
 
-## 🎨 Credits
+## Credits
 - Emoji strings taken from https://emojicombos.com/
 - All other design and code by Tanya Paul
 - Site icon and graphics are original work

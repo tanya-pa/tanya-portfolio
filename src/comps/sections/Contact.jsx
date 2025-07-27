@@ -27,7 +27,7 @@ export const Contact = () => {
             className="min-h-screen py-30">
             <TextScroll>
                 <h2 className="text-4xl font-bold mb-10 bg-gradient-to-r from-[#F96074] to-[#766DA7] bg-clip-text text-transparent text-center"> 
-                            . ݁₊ ⊹ . ݁ Get in Touch! 👋 ݁ . ⊹ ₊ ݁
+                            ⊹ . ݁ get in touch! 👋 ݁ . ⊹
                 </h2>
                 <div className="flex flex-col md:flex-row gap-5 w-full max-w-6xl mx-auto px-4">
                     

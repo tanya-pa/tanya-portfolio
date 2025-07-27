@@ -10,22 +10,20 @@ export const Home = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center z-10 px-4 gap-10">
                     <div className="text-center md:text-left flex-[1.2] min-w-0">
 
-                        <h1 className="text-5xl md:text-5xl font-bold text-center mb-6 flex flex-wrap justify-center items-center gap-3">
+                        <h1 className="text-6xl md:text-6xl font-bold text-center mb-6 flex flex-wrap justify-center items-center gap-3">
                             <span className="inline-block animate-bounce-sparkle text-[#F96074] delay-0">✩</span>
                             <span className="inline-block animate-bounce-sparkle text-[#FF9FAB] delay-200">₊˚</span>
-                            <span className="inline-block animate-bounce-sparkle text-[#9E7BB5] delay-200">.⋆</span>
                             
                             <span className="bg-gradient-to-r from-[#F96074] to-[#766DA7] bg-clip-text text-transparent">
-                                Tanya Paul
+                                hi, i'm tanya!
                             </span>
                             
                             <span className="inline-block animate-bounce-sparkle text-[#766DA7] delay-400">☾</span>
-                            <span className="inline-block animate-bounce-sparkle text-[#9E7BB5] delay-600">⋆⁺₊</span>
-                            <span className="inline-block animate-bounce-sparkle text-[#FF9FAB] delay-800">✧</span>
+                            <span className="inline-block animate-bounce-sparkle text-[#9E7BB5] delay-600">⋆₊</span>
                         </h1>
 
-                        <p className="text-white text-center text-lg mb-8 max-w-3xl">
-                            Hi, I'm Tanya! I'm a <span className="text-[#FF9FAB]">creative student developer & artist at Cornell University </span> studying CS & linguistics.
+                        <p className="text-white text-center text-xl mb-8 max-w-3xl">
+                            I'm a <span className="text-[#FF9FAB]">creative student developer & artist at Cornell University </span> studying CS & linguistics.
                             I love building aesthetic, human-centered solutions and exploring the intersection of technology & language.
                         </p>
                         <div className="flex justify-center space-x-10">

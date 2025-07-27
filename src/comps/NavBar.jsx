@@ -8,7 +8,7 @@ export const NavBar = ({menuOpen, setMenuOpen}) => {
         <nav className = "fixed top-0 w-full z-40 bg-[rgba(21,25,30,0.8)] backdrop-blur-lg border-b border-black/10 shadow-md">
             <div className = "max-w-5xl mx-auto px-4"> 
                 <div className = "flex justify-between items-center h-16">
-                    <a href="#home" className="text-xl font-bold text-[#F96074]">{" "}TANYA PAUL ♡ </a>
+                    <a href="#home" className="text-xl font-bold text-[#F96074]">{" "}TANYA PAUL</a>
                     <div className="w-7 h-5 text-white relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}> 
                         &#9776;
                     </div> 
