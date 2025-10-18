@@ -2,7 +2,7 @@ import { TextScroll } from "../TextScroll"
 import aboutImg from '/src/assets/about.png';
 export const About = () => {
 
-        const fullStackItems = ["React", "TailwindCSS", "SQL", "HTML & CSS", "Figma", "Python", "JavaScript", "Java", "Swift"]
+        const fullStackItems = ["React", "Tailwind", "SQL", "HTML & CSS", "Figma", "Python", "JavaScript", "Java", "Swift", "C"]
         const MLItems = ["TensorFlow", "Sckit Learn", "PyTorch", "OpenCV", "Keras", "NLTK"]
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-30">
@@ -24,8 +24,8 @@ export const About = () => {
 
                 <div className="flex-1 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6 space-y-12">
                     <p className="text-white text-lg text-center md:text-left leading-relaxed">
-                    I’m an <span className="text-[#FF9FAB]">aspiring computational linguist</span> passionate about exploring how machine learning can address social and digital challenges.
-                    I’m especially drawn to the ways humanities-driven fields and technology intersect to expand our understanding of the world. 
+                    I’m an <span className="text-[#FF9FAB]">aspiring computational linguist & data scientist</span> passionate about solving social and digital challenges through technology.
+                    I’m especially drawn to the ways humanities-driven fields and computing intersect to expand our understanding of the world. 
                     In my spare time, I love building web applications and experimenting with creative solutions.
                     Beyond tech, I’m a digital artist, amateur entomologist, internet archaeologist, and cinephile.
                     </p>
@@ -80,7 +80,7 @@ export const About = () => {
                         <span className="mr-2">🎓</span>
                         <strong className="text-[#FF9FAB]">B.A. in CS & Linguistics</strong> — Cornell University (2023–2027)
                         <br/>
-                        Relevant Coursework: DS & Functional Programming, OOP, Data Science, LinAlg Multivariable Calculus, ML, Algorithms
+                        Relevant Coursework: DS & Functional Programming, OOP, Data Science, Linear Algebra, ML, Algorithms, Syntax & Semantics, Discrete Structures, Probability Models, Computer System Organization, Language & Information
                         </p>
                     </div>
 
@@ -89,7 +89,7 @@ export const About = () => {
                     <div className="relative">
                         <p className="text-gray-300 text-md">
                         <span className="mr-2">💻</span>
-                        <strong className="text-[#FF9FAB]">JHU APL</strong>: Asymmetric Ops Intern (2022)
+                        <strong className="text-[#FF9FAB]">JHU APL</strong>: Asymmetric Operations Intern (2022)
                         </p>
                     </div>
 
@@ -110,7 +110,7 @@ export const About = () => {
                     <div className="relative">
                         <p className="text-gray-300 text-md">
                         <span className="mr-2">💡</span>
-                        <strong className="text-[#FF9FAB]">TechSur Solutions</strong>: SWE Intern (2025–Present)
+                        <strong className="text-[#FF9FAB]">TechSur Solutions</strong>: SWE Intern (2025)
                         </p>
                     </div>
 

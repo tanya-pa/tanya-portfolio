@@ -20,7 +20,7 @@ export const Projects = () => {
                             A perfume recommendation platform based on free-text queries. Users can discover a new signature perfume composed of their desired scent notes & moods.
                         </p>
                         <div className="flex flex-wrap gap-2">
-                            {["Python", "MySQL", "HTML", "CSS"].map((tech, key) => (
+                            {["Python", "MySQL", "HTML", "CSS", "Javascript"].map((tech, key) => (
                                 <span 
                                 key={key}
                                 className= "font-mono bg-[#F96074]/10 text-[#F96074] px-3 py-1 rounded-full text-sm \
