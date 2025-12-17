@@ -78,7 +78,7 @@ export const About = () => {
 
                         <p className="text-gray-300 text-md">
                         <span className="mr-2">🎓</span>
-                        <strong className="text-[#FF9FAB]">B.A. in CS & Linguistics</strong> — Cornell University (2023–2027)
+                        <strong className="text-[#FF9FAB]">B.A. in CS, Minor in Linguistics</strong> — Cornell University (2023–2026)
                         <br/>
                         Relevant Coursework: DS & Functional Programming, OOP, Data Science, Linear Algebra, ML, Algorithms, Syntax & Semantics, Discrete Structures, Probability Models, Computer System Organization, Language & Information
                         </p>
@@ -103,7 +103,7 @@ export const About = () => {
                     <div className="relative">
                         <p className="text-gray-300 text-md">
                         <span className="mr-2">🔬</span>
-                        <strong className="text-[#FF9FAB]">Cornell Comp Ling Lab</strong>: Research Assistant (2025–Present)
+                        <strong className="text-[#FF9FAB]">Cornell Comp Ling Lab</strong>: Research Assistant (2025)
                         </p>
                     </div>
 
