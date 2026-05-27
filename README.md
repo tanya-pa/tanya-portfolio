@@ -1,20 +1,20 @@
-# Tanya Paul, Personal Portfolio 𖤣.𖥧.𖡼.⚘
+# PERSONAL PORTFOLIO ♡˚✦˚—ˎˊ˗˚
 
-This is my personal developer portfolio site, showcasing my work, skills, and interests in computational linguistics, web development, machine learning and creative projects.
+this is my personal portfolio, showcasing my work, skills, and interests in SWE, computational linguistics, web development, machine learning and creative projects.
 
-🌐 **Live Site:** [View Portfolio](https://tanya-pa.github.io/tanya-portfolio/)
+🌐 **LIVE SITE:** [view portfolio](https://tanya-pa.github.io/portfolio/)
 
-## Tech Stack
-- **React**
-- **Vite**
-- **Tailwind CSS**
-- **EmailJS** (for contact form handling)
-- Deployed via **GitHub Pages**
+## TECH STACK
+- **react**
+- **vite**
+- **tailwind css**
+- **emailJS**
+- deployed via **github pages**
 
-## Contact
-Email: tanya26.paul@gmail.com
+## CONTACT
+email: tanya26.paul@gmail.com
 
-## Credits
-- Emoji strings taken from https://emojicombos.com/
-- All other design and code by Tanya Paul
-- Site icon and graphics are original work
+## CREDITSS
+- emoji strings taken from https://emojicombos.com/
+- all other design and code by tanya paul
+- site icon and graphics are original work

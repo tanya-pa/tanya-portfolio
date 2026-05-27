@@ -1,8 +1,7 @@
 
 import './App.css';
 import { useState } from "react";
-import { LoadingScreen } from './comps/LoadingScreen';
-import "./index.css"
+import "./index.css";
 import { NavBar } from './comps/NavBar';
 import { Mobile } from './comps/Mobile';
 import { Home } from './comps/sections/Home';
@@ -12,15 +11,12 @@ import { Contact } from './comps/sections/Contact';
 import { Footer } from './comps/Footer';
 
 function App() {
-  const[isLoaded, setLoaded] = useState(false)
   const[menuOpen, setMenuOpen] = useState(false)
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setLoaded(true)}/>}
       <div className="noise-overlay"/>
       <div className="relative z-10">
-        <div className = {`relative min-h-screen transition-opacuty duration-700 
-          ${isLoaded ? "opacity-100" : "opacity-0"}
+        <div className = {`relative min-h-screen transition-opacuty duration-700 opacity-100}
           bg-#FCECDD text-#FF7601`}>
           <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
           <Mobile menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>

@@ -24,7 +24,7 @@ export const Home = () => {
 
                         <p className="text-white text-center text-xl mb-8 max-w-3xl">
                             I'm a <span className="text-[#FF9FAB]">creative student developer & artist at Cornell University </span> studying CS & linguistics.
-                            I love building aesthetic, human-centered solutions and exploring the intersection of technology & language.
+                            I enjoy building aesthetic, human-centered solutions, and exploring the intersection of technology & language.
                         </p>
                         <div className="flex justify-center space-x-10">
                             <a href="#projects" className="bg-[#766DA7] text-white px-6 py-3 font-medium transition relative overflow-hidden
