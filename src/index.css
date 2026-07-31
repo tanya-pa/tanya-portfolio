@@ -1,11 +1,20 @@
 @import "tailwindcss";
 
+@theme {
+  --color-terracotta: #D06224;
+  --color-chile-rojo: #AE431E;
+  --color-olive: #8A8635;
+  --color-olive-light: #B5B15E;
+  --color-sunset: #EAC891;
+  --color-bg: #1C1512;
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Merriweather", serif;
-  background-color: #15191E;
-  color: #F96074
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #1C1512;
+  color: #D06224
 }
 
 @layer utilities {
@@ -18,28 +27,6 @@ html, body {
   .animate-blink{
     animation: blink 0.8s step-end infinite;
   }
-  
-  
-  @keyframes bounceSparkle {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-8px);
-    }
-  }
-
-  .animate-bounce-sparkle {
-    animation: bounceSparkle 1.2s infinite ease-in-out;
-  }
-
-  .delay-200 {
-    animation-delay: 0.2s;
-  }
-
-  .delay-400 {
-    animation-delay: 0.4s;
-  }
 }
 
 .reveal {
@@ -51,14 +38,4 @@ html, body {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0px);
-}
-
-.noise-overlay {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.15;
-  background: url('/src/assets/tone.png') repeat;
-  mix-blend-mode: overlay; 
 }

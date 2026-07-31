@@ -1,5 +1,6 @@
-import headerImg from '/src/assets/header.jpeg';
+import headerImg from '/src/assets/header.webp';
 import { TextScroll } from "../TextScroll"
+import { FlowerDrawing } from "../FlowerDrawing"
 
 export const Home = () => {
     return (
@@ -8,40 +9,40 @@ export const Home = () => {
             className="min-h-screen flex items-center justify-center relative pt-40">
             <TextScroll>
                 <div className="flex flex-col md:flex-row items-center justify-center z-10 px-4 gap-10">
-                    <div className="text-center md:text-left flex-[1.2] min-w-0">
+                    <div className="text-left w-full md:flex-1 min-w-0">
 
-                        <h1 className="text-6xl md:text-6xl font-bold text-center mb-6 flex flex-wrap justify-center items-center gap-3">
-                            <span className="inline-block animate-bounce-sparkle text-[#F96074] delay-0">✩</span>
-                            <span className="inline-block animate-bounce-sparkle text-[#FF9FAB] delay-200">₊˚</span>
-                            
-                            <span className="bg-gradient-to-r from-[#F96074] to-[#766DA7] bg-clip-text text-transparent">
-                                hi, i'm tanya!
-                            </span>
-                            
-                            <span className="inline-block animate-bounce-sparkle text-[#766DA7] delay-400">☾</span>
-                            <span className="inline-block animate-bounce-sparkle text-[#9E7BB5] delay-600">⋆₊</span>
+                        <h1 className="text-[clamp(2rem,1.38rem+2.63vw,3.75rem)] font-bold mb-6 text-[#D06224] flex flex-wrap items-center gap-3">
+                            <FlowerDrawing className="w-[clamp(2rem,4.5vw,3.25rem)] h-auto shrink-0" />
+                            hi, i'm tanya!
                         </h1>
 
-                        <p className="text-white text-center text-xl mb-8 max-w-3xl">
-                            I'm a <span className="text-[#FF9FAB]">creative student developer & artist at Cornell University </span> studying CS & linguistics.
-                            I enjoy building aesthetic, human-centered solutions, and exploring the intersection of technology & language.
+                        <p className="text-white text-left text-[clamp(1rem,0.82rem+0.89vw,1.25rem)] mb-8 max-w-3xl">
+                            <span className="text-[#EAC891]">Creative student developer and artist at Cornell University </span> studying CS & linguistics.
+                            I build aesthetic, human-centered software at the intersection of technology and the humanities.
                         </p>
-                        <div className="flex justify-center space-x-10">
-                            <a href="#projects" className="bg-[#766DA7] text-white px-6 py-3 font-medium transition relative overflow-hidden
+                        <div className="md:hidden flex justify-center mb-8">
+                            <img
+                                src={headerImg}
+                                alt="Photo of Tanya"
+                                className="w-[min(85%,26rem)] rounded-2xl ring-1 ring-white/10 shadow-2xl shadow-[#8A8635]/20"
+                            />
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                            <a href="#projects" className="bg-[#8A8635] text-white px-6 py-3 font-medium text-center whitespace-nowrap transition relative overflow-hidden
                                 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]">
-                                VIEW PROJECTS <span className="ml-2"> 🛠️ </span>
+                                VIEW PROJECTS
                             </a>
-                            <a href="#contact" className="bg-[#F96074] text-white px-6 py-3 font-medium transition relative overflow-hidden
+                            <a href="#contact" className="bg-[#D06224] text-white px-9 py-3 font-medium text-center whitespace-nowrap transition relative overflow-hidden
                                 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]">
-                                CONTACT ME <span className="ml-2"> ✉️ </span>
+                                CONTACT ME
                             </a>
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center">
+                    <div className="hidden md:flex justify-center shrink-0">
                         <img
                             src={headerImg}
                             alt="Photo of Tanya"
-                            className="mb-8 md:mb-0 max-w-md w-full border-[6px] border-[#F96074] shadow-[8px_8px_0_#766DA7] bg-white"
+                            className="w-[clamp(220px,38vw,420px)] rounded-2xl ring-1 ring-white/10 shadow-2xl shadow-[#8A8635]/20"
                         />
                     </div>
                 </div>

@@ -1,40 +1,44 @@
 import { TextScroll } from "../TextScroll"
-import aboutImg from '/src/assets/about.png';
+import { SectionHeading } from "../SectionHeading"
+import { Code2, BrainCircuit, Wrench, Leaf } from "lucide-react"
+import { AnimatedIcon } from "../AnimatedIcon"
+import aboutImg from '/src/assets/about.webp';
 export const About = () => {
-
-        const fullStackItems = ["React", "Tailwind", "SQL", "HTML & CSS", "Figma", "Python", "JavaScript", "Java", "Swift", "C", "R"]
-        const MLItems = ["TensorFlow", "Sckit Learn", "PyTorch", "OpenCV", "Keras", "NLTK"]
+        const languageItems = [ "Python",  "JavaScript", "Java", "SQL",  "Swift", "R", "OCaml", "HTML & CSS","C", "React/Node"]
+        const aiMlItems = ["NLP", "Agentic AI", "PyTorch", "TensorFlow", "Keras", "scikit-learn",  "LangChain"]
+        const toolsItems = ["Figma", "Docker", "AWS", "Git/GitHub", "Jupyter", "Linux", "Jira", "Kanban"]
     return (
-        <section id="about" className="min-h-screen flex items-center justify-center py-30">
+        <section id="about" className="min-h-screen flex items-center justify-center py-36">
             <TextScroll>
                 <div className="max-w-5xl mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#F96074] to-[#766DA7] bg-clip-text text-transparent">
-                    ⋆˚𖥔 about me ˖.☘︎
-                </h2>
+                <SectionHeading icon={Leaf} variant="rustle">about me</SectionHeading>
 
-                <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
- 
-                <div className="w-full md:w-1/3 flex justify-center md:justify-center items-center">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+
+                <div className="flex justify-center shrink-0">
                     <img
                     src={aboutImg}
                     alt="Picture of Tanya"
-                    className="w-48 sm:w-54 md:w-68 lg:w-76 border-4 border-[#F96074] shadow-[6px_6px_0_#766DA7] transition-all duration-300"
+                    className="w-[clamp(280px,26vw,420px)] rounded-2xl ring-1 ring-white/10 shadow-xl shadow-[#D06224]/20 transition-all duration-300"
                     />
                 </div>
 
-                <div className="flex-1 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6 space-y-12">
-                    <p className="text-white text-lg text-center md:text-left leading-relaxed">
-                    I’m an <span className="text-[#FF9FAB]">aspiring software engineer and computational linguist</span> passionate about solving social and digital challenges through technology.
-                    I’m especially drawn to the ways humanities-driven fields and computing intersect to expand our understanding of the world. 
-                    In my spare time, I love building web applications and experimenting with creative solutions.
-                    Beyond tech, I’m a digital artist, amateur entomologist, internet archaeologist, and cinephile.
+                <div className="flex-1 border-t lg:border-t-0 lg:border-l border-white/10 pt-4 lg:pt-0 lg:pl-6 space-y-12">
+                    <p className="text-white text-lg text-left leading-relaxed">
+                    I’m an <span className="text-[#EAC891]">aspiring developer </span> who loves tackling social and digital challenges through technology — 
+                    most recently by designing agentic workflows for data delivery at <span className="text-[#EAC891]">Wells Fargo</span>. 
+                    In my spare time, I make fun web applications based on my personal interests, experimenting with new tools along the way!
                     </p>
 
-                    <p className="text-md text-gray-400 italic text-center md:text-left">
-                    p.s. i also have a small art portfolio on wordpress! check out 
-                    <a 
-                        href="https://toonyadraw.wordpress.com/" 
-                        className="ml-1 text-[#FF9FAB] underline hover:text-[#F96074] transition"
+                    <p className="text-white text-lg text-left leading-relaxed">
+                    Beyond tech, I’m a digital artist, hobbyist entomologist, plant lover, amateur internet archaeologist, and cinephile.
+                    </p>
+
+                    <p className="text-md text-gray-400 italic text-left">
+                    p.s. i also have a small art portfolio - check out
+                    <a
+                        href="https://toonyadraw.wordpress.com/"
+                        className="ml-1 text-[#EAC891] underline hover:text-[#D06224] transition"
                     >
                         my work here!
                     </a>
@@ -42,91 +46,36 @@ export const About = () => {
                 </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 pt-12">
-                    <div className="p-6 bg-gradient-to-br from-[#766DA7]/20 via-[#F96074]/10 to-[#766DA7]/20 shadow hover:scale-105 transition relative overflow-hidden">
-                    <div className="pointer-events-none absolute inset-0 opacity-10 mix-blend-overlay"></div>
-                    <h3 className="font-bold text-xl mb-3"> <span className="mr-2">🔗</span> Full Stack</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 pt-12">
+                    <div className="rounded-xl p-6 bg-gradient-to-br from-[#8A8635]/20 via-[#D06224]/10 to-[#8A8635]/20 shadow hover:scale-105 transition relative overflow-hidden">
+                    <h3 className="font-bold text-xl mb-3 flex items-center gap-2"><AnimatedIcon icon={Code2} size={20} className="text-[#B5B15E]" /> Languages</h3>
                     <div className="flex flex-wrap gap-2">
-                        {fullStackItems.map((tech, key) => (
-                        <span key={key} className="font-mono bg-[#9b8bf3]/10 text-[#9b8bf3] px-3 py-1 rounded-full text-sm hover:bg-[#9b8bf3]/20 hover:shadow transition">
+                        {languageItems.map((tech, key) => (
+                        <span key={key} className="font-mono bg-[#B5B15E]/10 text-[#B5B15E] px-3 py-1 rounded-full text-sm hover:bg-[#B5B15E]/20 hover:shadow transition">
                             {tech}
                         </span>
                         ))}
                     </div>
                     </div>
-                    <div className="p-6 bg-gradient-to-br from-[#F96074]/10 via-[#766DA7]/20 to-[#F96074]/10 shadow hover:scale-105 transition relative overflow-hidden">
-                    <div className="pointer-events-none absolute inset-0 opacity-10 mix-blend-overlay"></div>
-                    <h3 className="font-bold text-xl mb-3"> <span className="mr-2">💾</span> ML Frameworks</h3>
+                    <div className="rounded-xl p-6 bg-gradient-to-br from-[#D06224]/10 via-[#8A8635]/20 to-[#D06224]/10 shadow hover:scale-105 transition relative overflow-hidden">
+                    <h3 className="font-bold text-xl mb-3 flex items-center gap-2"><AnimatedIcon icon={BrainCircuit} size={20} className="text-[#B5B15E]" /> AI / ML</h3>
                     <div className="flex flex-wrap gap-2">
-                        {MLItems.map((tech, key) => (
-                        <span key={key} className="font-mono bg-[#9b8bf3]/10 text-[#9b8bf3] px-3 py-1 rounded-full text-sm hover:bg-[#9b8bf3]/20 hover:shadow transition">
+                        {aiMlItems.map((tech, key) => (
+                        <span key={key} className="font-mono bg-[#B5B15E]/10 text-[#B5B15E] px-3 py-1 rounded-full text-sm hover:bg-[#B5B15E]/20 hover:shadow transition">
                             {tech}
                         </span>
                         ))}
                     </div>
                     </div>
-                </div>
-
-                <div className="glass rounded-xl p-8 border border-pink-400/10 shadow-[0_4px_30px_rgba(255,255,255,0.05)]
-                hover:-translate-y-1 transition-all relative overflow-hidden">
-                    <div className="pointer-events-none absolute inset-0 opacity-10 mix-blend-overlay"></div>
-                    <div className="space-y-8">
-                        
-                    <div className="relative">
-
-                        <h3 className="text-xl font-bold mb-4"> ᯓ★ Education</h3>
-
-                        <p className="text-gray-300 text-md">
-                        <strong className="text-[#FF9FAB]">B.A. in CS, Minor in Linguistics</strong> — Cornell University (2023–2026)
-                        <br/>
-                        Relevant Coursework: DS & Functional Programming, OS, Data Science, Linear Algebra, ML, Algorithms, Syntax & Semantics, Discrete Structures, Probability Models, Systems Organization, Language & Information
-                        </p>
+                    <div className="rounded-xl p-6 bg-gradient-to-br from-[#8A8635]/15 via-[#D06224]/15 to-[#8A8635]/10 shadow hover:scale-105 transition relative overflow-hidden">
+                    <h3 className="font-bold text-xl mb-3 flex items-center gap-2"><AnimatedIcon icon={Wrench} size={20} className="text-[#B5B15E]" /> Tools</h3>
+                    <div className="flex flex-wrap gap-2">
+                        {toolsItems.map((tech, key) => (
+                        <span key={key} className="font-mono bg-[#B5B15E]/10 text-[#B5B15E] px-3 py-1 rounded-full text-sm hover:bg-[#B5B15E]/20 hover:shadow transition">
+                            {tech}
+                        </span>
+                        ))}
                     </div>
-
-                    <h3 className="text-xl font-bold py-4 mb-4">˚꩜｡ Work Experience</h3>
-
-                    <div className="relative">
-                        <p className="text-gray-300 text-md">
-                        <span className="mr-2"></span>
-                        <strong className="text-[#FF9FAB]">JHU APL</strong>: Asymmetric Operations Intern (2022)
-                        </p>
-                    </div>
-
-                    <div className="relative">
-                        <p className="text-gray-300 text-md">
-                        <span className="mr-2"></span>
-                        <strong className="text-[#FF9FAB]">Cornell Mars Rover</strong>: Software Subteam (2023-2025)
-                        </p>
-                    </div>
-
-                    <div className="relative">
-                        <p className="text-gray-300 text-md">
-                        <span className="mr-2"></span>
-                        <strong className="text-[#FF9FAB]">Cornell Bowers CIS</strong>: Course Staff - CS 4300, INFO 2950, CS 1110 (2024–Present)
-                        </p>
-                    </div>
-
-                    <div className="relative">
-                        <p className="text-gray-300 text-md">
-                        <span className="mr-2"></span>
-                        <strong className="text-[#FF9FAB]">Cornell Comp Ling Lab</strong>: Research Assistant (2025)
-                        </p>
-                    </div>
-
-                    <div className="relative">
-                        <p className="text-gray-300 text-md">
-                        <span className="mr-2"></span>
-                        <strong className="text-[#FF9FAB]">TechSur Solutions</strong>: SWE Intern (2025)
-                        </p>
-                    </div>
-
-                    <div className="relative">
-                        <p className="text-gray-300 text-md">
-                        <span className="mr-2"></span>
-                        <strong className="text-[#FF9FAB]">Wells Fargo</strong>: Technology Intern (2026)
-                        </p>
-                    </div>
-
                     </div>
                 </div>
 
