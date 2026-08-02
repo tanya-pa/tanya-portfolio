@@ -10,7 +10,7 @@ export const Experience = () => {
             company: "Wells Fargo",
             start: "2026",
             end: "2026",
-            description: "Rebuilt data migration tool as agentic AI workflow with orchestrated subagents and dynamic UI"
+            description: "Built agentic AI workflow with orchestrated subagents and dynamic UI for accelerated data delivery"
         },
         {
             role: "SWE Intern",
@@ -24,7 +24,7 @@ export const Experience = () => {
             company: "Cornell Comp Ling Lab",
             start: "2025",
             end: "2025",
-            description: "Built NLP pipelines and dependency parsers to syntactically parse open-source language corpus on HPC systems"
+            description: "Implemented NLP pipelines to syntactically parse open-source language corpus on HPC systems"
         },
         {
             role: "Course Staff - CS 4300, INFO 2950, CS 1110",

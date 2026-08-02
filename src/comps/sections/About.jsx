@@ -25,7 +25,7 @@ export const About = () => {
 
                 <div className="flex-1 border-t lg:border-t-0 lg:border-l border-white/10 pt-4 lg:pt-0 lg:pl-6 space-y-12">
                     <p className="text-white text-lg text-left leading-relaxed">
-                    I’m an <span className="text-[#EAC891]">aspiring developer </span> who loves tackling social and digital challenges through technology — 
+                    I’m a <span className="text-[#EAC891]">product-minded engineer </span> who loves defining and solving social and digital challenges through technology — 
                     most recently by designing agentic workflows for data delivery at <span className="text-[#EAC891]">Wells Fargo</span>. 
                     In my spare time, I make fun web applications based on my personal interests, experimenting with new tools along the way!
                     </p>

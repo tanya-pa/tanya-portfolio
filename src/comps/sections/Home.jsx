@@ -18,7 +18,7 @@ export const Home = () => {
 
                         <p className="text-white text-left text-[clamp(1rem,0.82rem+0.89vw,1.25rem)] mb-8 max-w-3xl">
                             <span className="text-[#EAC891]">Creative student developer and artist at Cornell University </span> studying CS & linguistics.
-                            I build aesthetic, human-centered software at the intersection of technology and the humanities.
+                            I design and build aesthetic, human-centered software at the intersection of technology and the humanities.
                         </p>
                         <div className="md:hidden flex justify-center mb-8">
                             <img
